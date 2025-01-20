@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#portfolio">Resume</a></li>
+          <li class="dropdown"><a href="#"><span>+</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    <section class="max-w-3xl mx-auto my-12 px-6 py-8 bg-white rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h2 class="text-3xl font-semibold mb-4">About the Application</h2>
+        <p class="text-lg">
+            Explore the functionality of AVL Trees, Heap Sort, and Graph Coloring algorithms through interactive visualizations. 
+            This application provides a step-by-step walkthrough of these algorithms in action, making learning more engaging and practical.
+        </p>
+    </section>
+
+    <!-- GitHub Repository Section -->
+    <section class="max-w-3xl mx-auto my-12 px-6 py-8 bg-white rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h2 class="text-3xl font-semibold mb-4">GitHub Repository</h2>
+        <p class="text-lg">
+            The source code for this project is available on GitHub.<br>
+            <a href="https://github.com/BenakDeepak/algorithm_visualizers" target="_blank" class="text-blue-400 underline hover:text-blue-600">Repository Link</a>
+        </p>
+    </section>
+<!-- Visualizers Section -->
+<section class="section max-w-3xl mx-auto my-12 px-6 py-8 rounded-lg shadow-lg">
+    <h2 class="text-3xl font-semibold mb-4">Algorithm Visualizers</h2>
+    <div class="flex flex-col items-center space-y-6">
+        <a href="https://avltree.streamlit.app/" target="_blank" class="btn py-4 px-8 rounded-full font-semibold shadow-lg hover:shadow-xl bg-blue-500 text-white">AVL Tree Visualizer</a>
+        <a href="https://ada-project-2.onrender.com/" target="_blank" class="btn py-4 px-8 rounded-full font-semibold shadow-lg hover:shadow-xl bg-blue-500 text-white">Heap Sort Visualizer</a>
+        <a href="https://graphcoloring.streamlit.app/" target="_blank" class="btn py-4 px-8 rounded-full font-semibold shadow-lg hover:shadow-xl bg-blue-500 text-white">Graph Coloring Visualizer</a>
+        </div>
+</section>
+    <!-- Gallery Section -->
+    <section class="max-w-5xl mx-auto my-12 px-6 py-8 bg-white rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h2 class="text-3xl font-semibold mb-4">Video</h2>
+        <p class="text-lg mb-6">
+            Take a look at video of the visualizations provided by this application.
+        </p>
+            <video class="w-full h-auto object-cover rounded-lg shadow-lg" 
+                   src="algo1.mp4" 
+                   controls>
+            </video>
+        </div>
+    </section>
+        
+        <script>
+            function openModal(imageElement) {
+                const modal = document.getElementById('imageModal');
+                const modalImage = document.getElementById('modalImage');
+                modalImage.src = imageElement.src;
+                modal.classList.remove('hidden');
+            }
+        
+            function closeModal() {
+                const modal = document.getElementById('imageModal');
+                modal.classList.add('hidden');
+            }
+        </script>
+    </section>         
+    <section class="section max-w-5xl mx-auto my-12 px-6 py-8 rounded-lg shadow-lg">
+        <center><h2 class="text-3xl font-semibold mb-4">Gallery</h2>
+        <p class="text-lg mb-6">
+            Take a look at some screenshots of the visualizations provided by this application.
+        </p></center>
+        <div class="gallery grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <img src="./algo1.png" alt="AVL Tree Screenshot" class="rounded-lg shadow-md hover:shadow-lg gallery-img" onclick="openModal(this)">
+            <img src="./algo2.png" alt="Heap Sort Screenshot" class="rounded-lg shadow-md hover:shadow-lg gallery-img" onclick="openModal(this)">
+            <img src="./algo3.png" alt="Graph Coloring Screenshot" class="rounded-lg shadow-md hover:shadow-lg gallery-img" onclick="openModal(this)">
+            <img src="./algo4.png" alt="Algorithm Visualization" class="rounded-lg shadow-md hover:shadow-lg gallery-img" onclick="openModal(this)">
+            <img src="./algo5.png" alt="Heap Sort Visualization" class="rounded-lg shadow-md hover:shadow-lg gallery-img" onclick="openModal(this)">
+            <img src="./algo6.png" alt="AVL Tree Visualization" class="rounded-lg shadow-md hover:shadow-lg gallery-img" onclick="openModal(this)">
+            <img src="./algo7.png" alt="AVL Tree Visualization" class="rounded-lg shadow-md hover:shadow-lg gallery-img" onclick="openModal(this)">
+        </div>
+        
+        <!-- Modal Structure -->
+        <div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+            <div class="relative">
+                <img id="modalImage" src="" alt="Expanded View" class="max-w-full max-h-screen rounded-lg shadow-lg">
+                <button class="absolute top-4 right-4 text-black text-3xl font-bold bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:bg-gray-200"
+                        onclick="closeModal()">×</button>
+            </div>
+        </div>
+        
+        <style>
+            .gallery-img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                cursor: pointer;
+                transition: transform 0.3s;
+            }
+        
+            .gallery-img:hover {
+                transform: scale(1.05);
+            }
+        
+            .hidden {
+                display: none;
+            }
+        
+            button {
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+        
+            button:hover {
+                transform: scale(1.1);
+            }
+        </style>
+        
+        <script>
+            function openModal(imageElement) {
+                const modal = document.getElementById('imageModal');
+                const modalImage = document.getElementById('modalImage');
+                modalImage.src = imageElement.src;
+                modal.classList.remove('hidden');
+            }
+        
+            function closeModal() {
+                const modal = document.getElementById('imageModal');
+                modal.classList.add('hidden');
+            }
+        </script>
+        
+    </section>
+
+    <!-- Suggest Changes Section -->
+    <section class="section max-w-3xl mx-auto my-12 px-6 py-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold mb-4">Suggest Changes</h2>
+        <p class="text-lg mb-4">
+            We value your feedback. If you have suggestions for improvements or new features, please share them below.
+        </p>
+        <form action="/submit-suggestion" method="POST" class="flex flex-col space-y-6">
+            <textarea 
+                name="suggestion" 
+                placeholder="Enter your suggestion here..." 
+                class="w-full p-4 border border-gray-500 rounded-lg shadow-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                rows="4"></textarea>
+            <button type="submit" class="btn py-4 px-8 rounded-full font-semibold shadow-lg hover:shadow-xl bg-blue-500 text-white">Submit Suggestion</button>
+        </form>
+    </section>
+
+    <footer id="footer" class="footer accent-background" style="background-color: black; color: white;">
+
+        <div class="container">
+          <div class="copyright text-center">
+            <p style="font-size: 1.2rem;">© <span>Copyright</span> <strong class="px-1 sitename">Benak Portfolio</strong> <br><span>All Rights Reserved</span></p>
+          </div>
+          <div class="social-links d-flex justify-content-center">
+            <a href="https://twitter.com" style="color: white; font-size: 1.5rem;"><i class="bi bi-twitter"></i></a>
+            <a href="https://facebook.com" style="color: white; font-size: 1.5rem;"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" style="color: white; font-size: 1.5rem;"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" style="color: white; font-size: 1.5rem;"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      
+      </footer>
+
+</body>
+</html>
