@@ -26,6 +26,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Custom CSS Files -->
+  <link href="css/certifications.css" rel="stylesheet">
+  <link href="css/skills.css" rel="stylesheet">
 
 
 </head>
@@ -104,29 +107,29 @@
                 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
               </head>
               
-              <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
-                <div style="background-color: #f0f0f0; padding: 10px 20px; border-radius: 15px; text-align: center; font-size: 16px; font-weight: bold; color: #333; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                  <i class="fas fa-code" style="margin-right: 8px;"></i>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fas fa-code"></i>
                   <span>HTML</span>
                 </div>
-                <div style="background-color: #f0f0f0; padding: 10px 20px; border-radius: 15px; text-align: center; font-size: 16px; font-weight: bold; color: #333; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                  <i class="fas fa-code" style="margin-right: 8px;"></i>
+                <div class="skill-item">
+                  <i class="fas fa-code"></i>
                   <span>CSS</span>
                 </div>
-                <div style="background-color: #f0f0f0; padding: 10px 20px; border-radius: 15px; text-align: center; font-size: 16px; font-weight: bold; color: #333; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                  <i class="fas fa-laptop-code" style="margin-right: 8px;"></i>
+                <div class="skill-item">
+                  <i class="fas fa-laptop-code"></i>
                   <span>JavaScript</span>
                 </div>
-                <div style="background-color: #f0f0f0; padding: 10px 20px; border-radius: 15px; text-align: center; font-size: 16px; font-weight: bold; color: #333; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                  <i class="fab fa-python" style="margin-right: 8px;"></i>
+                <div class="skill-item">
+                  <i class="fab fa-python"></i>
                   <span>Python</span>
                 </div>
-                <div style="background-color: #f0f0f0; padding: 10px 20px; border-radius: 15px; text-align: center; font-size: 16px; font-weight: bold; color: #333; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                  <i class="fab fa-django" style="margin-right: 8px;"></i>
+                <div class="skill-item">
+                  <i class="fab fa-django"></i>
                   <span>Django</span>
                 </div>
-                <div style="background-color: #f0f0f0; padding: 10px 20px; border-radius: 15px; text-align: center; font-size: 16px; font-weight: bold; color: #333; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                  <i class="fab fa-react" style="margin-right: 8px;"></i>
+                <div class="skill-item">
+                  <i class="fab fa-react"></i>
                   <span>React</span>
                 </div>
               </div>
@@ -143,8 +146,8 @@
                   <li>I am passionate about solving problems through clean, efficient code, and I continuously experiment with new technologies to stay ahead of the curve.</li>
                   <li>I enjoy collaborating with others in a team environment, contributing innovative ideas to achieve common goals.</li>
                 </ul>
-                <div style="margin-top: 30px;">
-                  <p style="font-size: 20px; font-weight: bold; color: #333;">Let's build something amazing together!</p>
+                <div class="about-cta">
+                  <p>Let's build something amazing together!</p>
                 </div>
               </section>
               
@@ -399,19 +402,19 @@
 </section><!-- End GitHub and LinkedIn Section -->
 
 <!-- Certification Section -->
-<section id="certifications" style="padding: 40px 0; background-color: #f8f9fa;">
+<section id="certifications" class="certification-section">
   <!-- Section Title -->
-  <div style="text-align: center; margin-bottom: 20px;">
+  <div class="section-title">
     <h2 style="font-size: 2rem; margin-bottom: 10px; color: #333;">Certifications</h2>
     <p style="font-size: 1rem; color: #555;">Showcasing my achievements in extracurricular activities, technical expertise, and notable accomplishments.</p>
   </div>
 
   <!-- Filter Buttons -->
-  <div style="text-align: center; margin-bottom: 30px;">
-    <button onclick="filterSelection('all')" style="padding: 10px 20px; margin: 5px; font-size: 1rem; border: none; background-color: #000000; color: white; border-radius: 5px; cursor: pointer; transition: 0.3s;">All</button>
-    <button onclick="filterSelection('extracurricular')" style="padding: 10px 20px; margin: 5px; font-size: 1rem; border: none; background-color: #000000; color: white; border-radius: 5px; cursor: pointer; transition: 0.3s;">Extracurricular</button>
-    <button onclick="filterSelection('technical')" style="padding: 10px 20px; margin: 5px; font-size: 1rem; border: none; background-color: #000000; color: white; border-radius: 5px; cursor: pointer; transition: 0.3s;">Technical</button>
-    <button onclick="filterSelection('achievements')" style="padding: 10px 20px; margin: 5px; font-size: 1rem; border: none; background-color: #000000; color: white; border-radius: 5px; cursor: pointer; transition: 0.3s;">Achievements</button>
+  <div class="filter-buttons">
+    <button onclick="filterSelection('all')" class="filter-button">All</button>
+    <button onclick="filterSelection('extracurricular')" class="filter-button">Extracurricular</button>
+    <button onclick="filterSelection('technical')" class="filter-button">Technical</button>
+    <button onclick="filterSelection('achievements')" class="filter-button">Achievements</button>
   </div>
 
 
@@ -426,7 +429,7 @@
 </div>
 
   <!-- Certification Items -->
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <div class="certification-grid">
     <!-- Extracurricular Certificate -->
     <!-- Achievement Certificate -->
     <div class="certification-item extracurricular" style="max-width: 300px; text-align: center;">
@@ -465,32 +468,7 @@
      
   </div>
 </section>
-<script>
-  // Function to filter certificates
-  function filterSelection(category) {
-    const items = document.querySelectorAll('.certification-item');
-    items.forEach(item => {
-      if (category === 'all' || item.classList.contains(category)) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-  }
-
-  // Function to open the lightbox
-  function openLightbox(imgSrc, title, description) {
-    document.getElementById('lightbox-img').src = imgSrc;
-    document.getElementById('lightbox-title').innerText = title;
-    document.getElementById('lightbox-description').innerText = description;
-    document.getElementById('lightbox').style.display = 'flex';
-  }
-
-  // Function to close the lightbox
-  function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
-  }
-</script>
+<script src="js/certifications.js"></script>
 
   <!-- Contact Section -->
 <section id="contact" class="contact section">
